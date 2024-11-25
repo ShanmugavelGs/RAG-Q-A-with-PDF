@@ -3,6 +3,7 @@ import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import chromadb
 import streamlit as st
+import uuid
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_chroma import Chroma
@@ -35,7 +36,11 @@ if api_key:
 
     ## chat interface
 
-    session_id=st.text_input("Session ID",value="default_session")
+    ## Generate a unique session ID for each user automatically
+    if 'session_id' not in st.session_state:
+        st.session_state.session_id = str(uuid.uuid4())
+
+    session_id = st.session_state.session_id
     ## statefully manage chat history
 
     if 'store' not in st.session_state:
