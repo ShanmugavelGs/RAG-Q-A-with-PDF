@@ -40,7 +40,7 @@ Check out the live project!
 
 ## Implementation Steps
 
-- Create a Groq API key from Groq Cloud platform.[GroqCloud](https://console.groq.com/login)
+- Create a Groq API key from Groq Cloud platform. [GroqCloud](https://console.groq.com/login)
 - Copy and Paste the API key in the Input field.
 - Upload any document and ask questions!
 
