@@ -23,7 +23,6 @@ pandas
 duckduckgo-search
 mysql-connector-python
 SQLAlchemy
-sqlite3==3.42.0
 validators==0.28.1
 youtube_transcript_api
 unstructured
