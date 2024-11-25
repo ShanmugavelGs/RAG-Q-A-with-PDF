@@ -23,7 +23,7 @@ This project is a Conversational Retrieval-Augmented Generation (RAG) system tha
 
 Check out the live project!
 
-[Text to Math App](https://rag-q-a-with-pdf-fnappldaix8hqxrd6niqqia.streamlit.app/)
+[Document Chat App](https://rag-q-a-with-pdf-fnappldaix8hqxrd6niqqia.streamlit.app/)
 
 ---
 
